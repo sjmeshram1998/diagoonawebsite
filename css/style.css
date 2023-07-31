@@ -1,0 +1,106 @@
+.bg {
+    background-image:linear-gradient(109deg,transparent 50%,rgba(9, 8, 8, 0.7)50%), url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+/* ul starts */
+.nav-bar {
+    list-style-type: none;
+    margin-top: 1.5rem;
+}
+.nav-bar li {
+    display: inline-block;
+
+}
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+li a:hover {
+    background-color: white;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    
+
+}
+/* ul ends */
+
+/*  logo starts  */
+.main {
+    display: flex; 
+ 
+    
+}
+.umbrela-icon {
+    color: #ffffff; 
+    font-size: 45px; 
+    margin-top: 1.5rem;
+    transform: skew(-14deg);
+
+}
+.logo {
+    color: white;
+    /* padding: 1rem; */
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;     
+    left: 5rem;
+}
+
+.logo-para {
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 3rem;
+    position: relative;
+    top: 3.3rem;
+    color: white;
+    left: -25px;        
+}
+ /* logo ends */
+.box {
+    border: #ffffff;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    margin: 1rem;
+}
+.parent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 90vh;
+}
+
+/* media query */
+@media only screen and (max-width: 992px) 
+{
+    .nav-bar li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.bg {
+    background-image:linear-gradient(109deg,rgba(9, 8, 8, 0.5)50%,rgba(9, 8, 8, 0.5)50%), url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.parent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 50vh;
+}
+
+}
